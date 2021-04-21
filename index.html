@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>veille_opencv</title>
+</head>
+<body>
+ <Div Align=Center> 
+<h1>OpenCV: Applications et fonctions</h1>
+<div class="image"><img src="logo.png"></div>
+
+
+<p><h2>Qu'est-ce que la vision par ordinateur ?</h2></p>
+ 
+<p>
+La vision par ordinateur fait partie du domaine de l'intelligence artificielle, où les ordinateurs sont formés pour intervenir dans les médias numériques, c'est-à-dire les images, les vidéos comme le peuvent les humains, maintenant il peut s'agir de médias stockés ou de streaming en direct depuis n'importe quelle caméra ou caméra Web.
+</p>
+ 
+<p>
+En termes simples, avec l'apprentissage automatique et les algorithmes d'apprentissage en profondeur , les ordinateurs sont capables de reconnaître et de traiter les objets de la vidéo / des images comme un humain peut les reconnaître. 
+</p>
+
+<div class="image"><img src="O2.png"></div>
+
+<h2>Application de la vision par ordinateur</h2>
+ 
+
+
+<strong>Automobiles:</strong>
+
+<p>
+Des entreprises comme Tesla et Waymo ont investi dans des voitures autonomes , qui seront considérées comme l'avenir de l'industrie automobile.
+</p>
+ 
+
+<strong>Les magasins de détail:</strong>
+
+<p>
+Amazon Go , qui a surmonté le travail des propriétaires de magasins en éliminant le besoin d'un caissier et de comptoirs de caisse, car un client peut payer directement ses factures en utilisant, ce qui prouve qu'il fait gagner du temps au client et fait disparaître les files d'attente interminables de personnes qui attendent au caisses pour leur tour.
+</p>
+ 
+
+<strong>Reconnaissance de visage:</strong>
+
+<p>
+Grâce à l'apprentissage automatique et à la vision par ordinateur, il est désormais possible de reconnaître les visages d'une personne en particulier à partir de vidéos ou de photos. En particulier, cette application peut également être utilisée en surveillance .
+</p>
+ 
+
+<strong>Diagnostic médical: </strong>
+
+ <p>
+Bien qu'il soit difficile de remplacer les ordinateurs par un humain dans le secteur de la santé. Mais encore, la vision par ordinateur sera utile aux médecins dans le diagnostic médical car elle peut détecter des modèles à partir d'images que les humains ne peuvent pas aimer, <strong>les tumeurs cancéreuses </strong>.
+</p> 
+</ul>
+
+<h2>Qu'est-ce que l'Open CV?</h2>
+ OpenCV (Open Source Computer Vision) est une bibliothèque de fonctions de programmation principalement destinées à la vision par ordinateur en temps réel. Développé à l'origine par Intel en 1999, il a ensuite été soutenu par Willow Garage puis Itseez (qui a ensuite été racheté par Intel).
+<p>
+ elle est lancée pour les applications de vision par ordinateur et d'apprentissage automatique. Initialement, il a été développé en C / C ++, qui a ensuite été développé pour prendre en charge d'autres langages, y compris Python.
+
+<p> ll prend en charge certains des frameworks d'apprentissage en profondeur, notamment TensorFlow, PyTorch, Caffe . Ce blog inclura l'utilisation de l' API Python d' Open CV.</p>	
+</p>
+
+<h2>Application d'Open CV avec Python</h2>
+ 
+<p>
+Avec l'aide d'Open CV en python, il est possible de traiter facilement des images, des vidéos et d'en extraire des informations utiles, car de nombreuses fonctions sont disponibles. Certaines des applications courantes sont:
+</p>
+ 
+<ul>
+
+<strong>Traitement d'image: </p></strong>
+
+<p>
+Les images peuvent être lues, écrites, affichées et traitées avec OpenCV, comme peuvent générer une nouvelle image à partir de celle-ci en changeant sa forme, sa couleur ou en extrayant quelque chose d'utile de celle donnée et en écrivant dans une nouvelle image.
+</p>
+ 
+
+<strong>Détection facial:</strong>
+<p>
+Soit à partir de la diffusion en direct à l'aide de la caméra Web, soit des vidéos / images stockées localement à l'aide des classificateurs Haar-Cascade .
+</p>
+ 
+
+<strong>Reconnaissance de visage: </strong>
+
+<p>
+Il a suivi par la détection de visage à partir des vidéos en utilisant un cv ouvert en dessinant des cadres de délimitation, c'est-à-dire un rectangle, puis un entraînement de modèle à l'aide d' algorithmes de ML pour reconnaître les visages.
+</p>
+<br>
+<div class="image"><img src="O3.png"></div>
+
+<strong><li>Détection d'objets:</li> </strong>
+
+
+<p>
+Open CV avec le YOLO , un algorithme de détection d'objet peut être utilisé pour détecter des objets à partir de l'image, des vidéos d'objets mobiles ou stationnaires
+</p>
+<br>
+<div class="image"><img src="O4.png"></div>
+   Détection d'objets à l'aide de YOLO et OpenCV
+
+<hr>
+
+<strong>Python représente une image sous la forme d'un tableau Numpy.</strong>
+
+<h2>Comment faire l'installation?</h2>
+ 
+
+<p><strong>Exécutez le code ci-dessous pour installer un CV ouvert dans votre système. Installez Python avant de suivre
+ ces étapes.</strong></p>
+
+ 
+<strong>les fenêtres</strong>
+
+ 
+    <p>Dans l'invite de commande,</p>
+
+    pip installer OpenCV-python
+
+    Dans l'invite anaconda
+
+    conda installer -c conda-forge OpenCV	
+  
+ 
+
+<strong><Linux</strong>
+
+sudo apt-get install libopencv-dev python-Open
+
+
+  
+
+
+<h2>Quelles sont les fonctions Open CV?</h2>
+ 
+  
+  	
+<strong>Lire, écrire et afficher l'image</strong>
+ 
+
+ <p>
+Images en python représentées sous forme de tableau NumPy, essentiellement un tableau de pixels. Chaque fois que l'utilisateur lit l'image en utilisant OpenCV, ce sera l'image couleur (par défaut) qui contient plusieurs valeurs pour un seul pixel, c'est-à-dire pour les canaux Rouge, Vert, Bleu.
+</p>
+ 
+<strong>Exécutez le code ci-dessous pour lire et afficher l'image à l'aide d'OpenCV dans google collab,</strong>
+<br>
+<br>
+
+<div class="image"><img src="O5.png"></div>
+
+<p>Lorsque l'utilisateur lit l'image en utilisant OpenCV, il existe différents formats disponibles, il vous suffit de passer le drapeau correspondant selon vos besoins,</p>
+
+
+<p>cv2.IMREAD_COLOR: Format par défaut pour lire l'image.</p>
+
+<p>cv2.IMREAD_GRAYSCALE: charge l'image au format en niveaux de gris.</p>
+
+<p>cv2.IMREAD_UNCHANGED: charge l'image dans le même format dans lequel elle a été stockée.</p>
+<strong>
+<p>
+
+<hr>
+Exécutez le code ci-dessous pour lire l'image en niveaux de gris et également pour convertir l'image couleur en un format en niveaux de gris,</p></strong>
+
+<div class="image"><img src="O6.png"></div>
+Afficher l'image en niveaux de gris
+
+<hr>
+<strong>Exécutez le code ci-dessous pour convertir l'image au format HSV.</strong>
+<hr>
+<div class="image"><img src="O8.png"></div>
+<hr>
+Afficher le format HSV
+<hr>
+<strong>Exécutez le code ci-dessous pour écrire l'image en niveaux de gris sur l'ordinateur local.</strong>
+<hr>
+<div class="image"><img src="O9.png"></div>
+Ecrire l'image en utilisant OpenCV
+<hr>
+
+
+<strong>Faire pivoter les images</strong>
+ <p>
+Parfois, vous avez besoin des mêmes images avec une orientation différente, c'est-à-dire des images pivotées à des angles différents ou vous pouvez dire l'augmentation des données.
+</p>
+<strong><p>Exécutez le code ci-dessous pour faire pivoter l'image,</p></strong>
+<hr>
+<div class="image"><img src="O10.png"></div>
+<hr>
+Faites pivoter l'image de 90 degrés
+<hr>
+
+<strong>Seuil d'image</strong>
+ 
+<p>
+Une technique de segmentation d'image, où chaque valeur de pixel sera comparée à une certaine valeur de seuil et mettra à jour la valeur de pixel de l'image.
+</p>
+
+<p>
+Mais le seuil d'image ne fonctionnera que sur une image en niveaux de gris.
+</p>
+Exécutez le code ci-dessous pour le seuillage d'image,
+<hr>
+<div class="image"><img src="O11.png"></div>
+Seuil d'image
+<hr>
+
+<p>Il existe différents types d'indicateur de seuil d'image disponibles, que vous pouvez utiliser selon vos besoins,</p>
+
+   
+	<p>-cv2.THRESH_BINARY,</p>
+
+    <p>-cv2.THRESH_BINARY_INV,</p>
+
+    <p>-cv2.THRESH_TRUNC,</p>
+
+    <p>-cv2.THRESH_TOZERO,</p>
+
+    <p>-cv2.THRESH_TOZERO_INV</p>
+  
+ 
+<hr>
+
+<strong>Détection des bords</strong>
+ 
+
+La détection des contours aidera dans de nombreuses applications telles que la détection d'objets à partir d'images / vidéos. 
+
+Exécutez le code ci-dessous pour détecter les bords de l'image.
+<hr>
+<div class="image"><img src="O12.png"></div>
+Détection des bords d'une image
+<hr>
+<strong>Détection de contour</strong>
+ 
+<p>
+Il est maintenant temps de détecter les contours des images, c'est-à-dire les lignes présentes dans les images. Même vous pouvez également obtenir le nombre d'objets présents dans l'image ainsi que des formes peuvent également être détectées des formes polygonales présentes dans les images.
+</p>
+ <p>
+Exécutez le code ci-dessous pour la détection de contour,
+</p>
+<div class="image"><img src="O13.png"></div>
+Détection de contour
+<hr>
+
+<strong>Détection facial</strong>
+ 
+<p>
+Comme mentionné ci-dessus, la détection de visage peut être effectuée à l'aide d'OpenCV car il existe des classificateurs basés sur l'apprentissage automatique disponibles pour détecter le visage et différentes parties du visage en utilisant des classificateurs appropriés, à savoir les classificateurs Haar Cascade .
+</p>
+ <p>Exécutez le code ci-dessous pour la detection faciale</p>
+<hr>
+<div class="image"><img src="O14.png"></div>
+
+Détection de visage à l'aide d'OpenCV, Source
+
+<hr>
+
+<strong>Conclusion</strong>
+ 
+<p>
+La vision par ordinateur est le sous-domaine de l'intelligence artificielle , où les ordinateurs sont formés pour traiter l'image et extraire les caractéristiques importantes des images ou des vidéos. Open Computer Vision (OpenCV), une bibliothèque python, écrite en C ++, fournit diverses fonctionnalités pour les applications de vision par ordinateur. 
+</p>
+
+ <p>Outre toutes les fonctions évoquées ci-dessus, il existe d'autres fonctionnalités disponibles par Open CV, pour lesquelles vous pouvez vous référer à sa documentation officielle <a href="https://opencv.org/releases/"> Voir plus</a>
+ </p>
+<BR>
+</Div>
+</body>
+</html>
